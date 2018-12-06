@@ -14,7 +14,7 @@ public class CosTests {
     private double valueA;
     private double expected;
 
-    public CosTests(double  valueA, double  expected){
+    public CosTests(double valueA, double expected) {
         this.valueA = valueA;
         this.expected = expected;
     }
@@ -35,7 +35,7 @@ public class CosTests {
     }
 
     @Parameterized.Parameters
-    public static Collection<Object[]> getParameters(){
+    public static Collection<Object[]> getParameters() {
         Collection<Object[]> parameters = new ArrayList<Object[]>();
         parameters.add(new Object[]{0, 1});
         parameters.add(new Object[]{0.5, 0.8775825618903728});

@@ -2,8 +2,10 @@ import com.epam.tat.module4.Calculator;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.util.ArrayList;
 import java.util.Collection;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -12,7 +14,7 @@ public class CtgTests {
     private double valueA;
     private double expected;
 
-    public CtgTests(double valueA, double expected){
+    public CtgTests(double valueA, double expected) {
         this.valueA = valueA;
         this.expected = expected;
     }
@@ -33,7 +35,7 @@ public class CtgTests {
     }
 
     @Parameterized.Parameters
-    public static Collection<Object[]> getParameters(){
+    public static Collection<Object[]> getParameters() {
         Collection<Object[]> parameters = new ArrayList<Object[]>();
         parameters.add(new Object[]{-0.6, -0.5370495669980353});
         parameters.add(new Object[]{1, 0.7615941559557649});

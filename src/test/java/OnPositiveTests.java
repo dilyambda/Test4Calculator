@@ -2,16 +2,18 @@ import com.epam.tat.module4.Calculator;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.util.ArrayList;
 import java.util.Collection;
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class OnPositiveTests {
-    private long  valueA;
+    private long valueA;
     private boolean expected;
 
-    public OnPositiveTests(long valueA, boolean expected){
+    public OnPositiveTests(long valueA, boolean expected) {
         this.valueA = valueA;
         this.expected = expected;
     }
@@ -32,7 +34,7 @@ public class OnPositiveTests {
     }
 
     @Parameterized.Parameters
-    public static Collection<Object[]> getParameters(){
+    public static Collection<Object[]> getParameters() {
         Collection<Object[]> parameters = new ArrayList<Object[]>();
         parameters.add(new Object[]{2L, true});
         parameters.add(new Object[]{-8L, false});

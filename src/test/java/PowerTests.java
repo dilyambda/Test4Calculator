@@ -2,8 +2,10 @@ import com.epam.tat.module4.Calculator;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.util.ArrayList;
 import java.util.Collection;
+
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -12,7 +14,7 @@ public class PowerTests {
     private long valueB;
     private long expected;
 
-    public PowerTests(long valueA, long valueB, long expected){
+    public PowerTests(long valueA, long valueB, long expected) {
         this.valueA = valueA;
         this.valueB = valueB;
         this.expected = expected;
@@ -34,7 +36,7 @@ public class PowerTests {
     }
 
     @Parameterized.Parameters
-    public static Collection<Object[]> getParameters(){
+    public static Collection<Object[]> getParameters() {
         Collection<Object[]> parameters = new ArrayList<Object[]>();
         parameters.add(new Object[]{2L, 6, 64L});
         parameters.add(new Object[]{11L, 2, 121L});
